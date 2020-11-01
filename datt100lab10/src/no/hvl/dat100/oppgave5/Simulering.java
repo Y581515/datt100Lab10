@@ -116,31 +116,27 @@ public class Simulering {
 		String t = "";
 		// System.out.print("[");
 		for (int j = 1; j < tab.length; j++) {
-			if (j < tab.length - 1) {
 
-				if (j == 1) {
-					t = "[ . ]";
-				}
-				if (j == 2) {
-					t = "[ : ]";
-				}
-				if (j == 3) {
-					t = "[...]";
-				}
-				if (j == 4) {
-					t = "[: :]";
-				}
-				if (j == 5) {
-					t = "[:.:]";
-				}
-				if (j == 6) {
-					t = "[:::]";
-				}
-
-				System.out.println("antall " + t + "-ere = " + tab[j] + " ");
-			} else {
-				System.out.print("antall " + t + "ere = " + tab[j]);
+			if (j == 1) {
+				t = "[ . ]";
 			}
+			if (j == 2) {
+				t = "[ : ]";
+			}
+			if (j == 3) {
+				t = "[...]";
+			}
+			if (j == 4) {
+				t = "[: :]";
+			}
+			if (j == 5) {
+				t = "[:.:]";
+			}
+			if (j == 6) {
+				t = "[:::]";
+			}
+
+			System.out.println("antall " + t + "-ere = " + tab[j] + " ");
 
 		} // System.out.println("]\n");
 	}
@@ -155,6 +151,22 @@ public class Simulering {
 				pos++;
 			}
 
-		return pos+1;
+		return pos + 1;
 	}
+
+	public void flestResulat() {
+		int j = 0;
+		int[] tab = sortertKast();
+		for (int i = 0; i < tab.length; i++) {
+			if (tab[j] < tab[i]) {
+				j =i;
+			}else {
+				
+			}
+		}
+
+		System.out.println("Terningverdien det var flest av : " + j);
+
+	}
+
 }

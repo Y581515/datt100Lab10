@@ -1,8 +1,9 @@
 package no.hvl.dat100.oppgave5;
 
 public class Tester {
+
 	public static void main(String[] args) {
-		
+			
 		Simulering g=new Simulering();
 		g.thrillSimulering();
 		g.SkriveUt();
@@ -13,11 +14,13 @@ public class Tester {
 		System.out.println();
 		System.out.println(g.getSum());
 		g.gSKast();
-		System.out.println(g.førsteTall(3));
-		
-		
+		int terningNR=3;
+		System.out.println("Antall kast for å få den første "+terningNR+"-eren: "+g.førsteTall(terningNR));
+		g.flestResulat();		
+	
 		
 		
 	}
+	
 
 }
