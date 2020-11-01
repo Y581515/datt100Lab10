@@ -6,7 +6,18 @@ public class Tester {
 		Simulering g=new Simulering();
 		g.thrillSimulering();
 		g.SkriveUt();
-		g.SkriveUt2();
+		g.AntOyne();
+		System.out.println();
+		g.SkriveUtTegning();
+		g.AntOyneTegning();		
+		System.out.println();
+		System.out.println(g.getSum());
+		g.gSKast();
+		System.out.println(g.førsteTall(3));
+		
+		
+		
+		
 	}
 
 }
