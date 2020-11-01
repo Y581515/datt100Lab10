@@ -156,16 +156,23 @@ public class Simulering {
 
 	public void flestResulat() {
 		int j = 0;
+		int k = 0;
 		int[] tab = sortertKast();
 		for (int i = 0; i < tab.length; i++) {
 			if (tab[j] < tab[i]) {
-				j =i;
-			}else {
-				
+				j = i;
 			}
 		}
-
-		System.out.println("Terningverdien det var flest av : " + j);
+		for (int i = 0; i < tab.length; i++) {
+			if (tab[k] <= tab[i]) {
+				k = i;
+			}
+		}
+		if (k != j) {
+			System.out.println("Terningverdien det var flest av : " + k + "\nog " + j+" og det er: "+tab[j]+" ganger");
+		} else {
+			System.out.println("Terningverdien det var flest av : " + j+"\nog det er: "+tab[j]+" ganger");
+		}
 
 	}
 

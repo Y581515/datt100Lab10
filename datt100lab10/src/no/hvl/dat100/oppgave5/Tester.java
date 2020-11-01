@@ -14,8 +14,9 @@ public class Tester {
 		System.out.println();
 		System.out.println(g.getSum());
 		g.gSKast();
-		int terningNR=3;
-		System.out.println("Antall kast for å få den første "+terningNR+"-eren: "+g.førsteTall(terningNR));
+		System.out.println("");
+		int terningNR=1;
+		System.out.println("Antall kast for å få den første "+terningNR+"-eren: "+g.førsteTall(terningNR)+"\n");
 		g.flestResulat();		
 	
 		
