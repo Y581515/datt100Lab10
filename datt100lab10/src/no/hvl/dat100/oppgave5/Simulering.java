@@ -79,6 +79,7 @@ public class Simulering {
 		} // System.out.println("]\n");
 	}
 
+	int m=4;
 	public void SkriveUtTegning() {
 		int tabIndekst = 0;
 		for (int j = 0; j < 5; j++) {
@@ -86,22 +87,22 @@ public class Simulering {
 			while (i < 20) {
 				int n = kast[tabIndekst];
 				if (n == 1) {
-					System.out.print(String.format("%10s", "[ . ]"));
+					System.out.print(String.format("%s%"+m+"s", "[ . ]"," "));
 				}
 				if (n == 2) {
-					System.out.print(String.format("%10s", "[ : ]"));
+					System.out.print(String.format("%s%"+m+"s", "[ : ]"," "));
 				}
 				if (n == 3) {
-					System.out.print(String.format("%10s", "[...]"));
+					System.out.print(String.format("%s%"+m+"s", "[...]", " "));
 				}
 				if (n == 4) {
-					System.out.print(String.format("%10s", "[: :]"));
+					System.out.print(String.format("%s%"+m+"s", "[: :]"," "));
 				}
 				if (n == 5) {
-					System.out.print(String.format("%10s", "[:.:]"));
+					System.out.print(String.format("%s%"+m+"s", "[:.:]"," "));
 				}
 				if (n == 6) {
-					System.out.print(String.format("%10s", "[:::]"));
+					System.out.print(String.format("%s%"+m+"s", "[:::]"," "));
 				}
 
 				tabIndekst++;
