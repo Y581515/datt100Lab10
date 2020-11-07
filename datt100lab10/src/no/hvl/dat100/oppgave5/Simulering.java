@@ -87,7 +87,7 @@ public class Simulering {
 			while (i < 20) {
 				int n = kast[tabIndekst];
 				if (n == 1) {
-					System.out.print(String.format("%s%"+m+"s", "[ . ]"," "));
+					System.out.print(String.format("%s%"+m+"s", "[ . ]",""));
 				}
 				if (n == 2) {
 					System.out.print(String.format("%s%"+m+"s", "[ : ]"," "));
